@@ -18,6 +18,6 @@ document.getElementById('noBtn').addEventListener('click', function() {
 document.getElementById('yesBtn').addEventListener('click', function() {
     const gifContainer = document.getElementById('gifContainer');
     gifContainer.innerHTML = `
-        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXd2dDZneGY4MXNyY3RnNDc1OWpuY2F0dGk2aGZyaWl3eXRiYjIzeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5a9X03BCDS9l6/giphy.gif" alt="Bear Kiss">
+        <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Heart" style="width: 200px;">
     `;
 });
