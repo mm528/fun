@@ -9,21 +9,34 @@ document.getElementById('yesBtn').addEventListener('click', function() {
 
 document.getElementById('noBtn').addEventListener('click', function() {
     const buttonsContainer = document.querySelector('.buttons');
-    const body = document.body;
+    
+    // Remove the first h1 element
+    const firstH1 = document.querySelector('h1');
+    if (firstH1) {
+        firstH1.remove();
+    }
     
     if (buttonsContainer) {
         // Remove buttons
         buttonsContainer.remove();
         
-        // Remove existing H1 if present
-        const existingH1 = document.querySelector('h1');
-        if (existingH1) {
-            existingH1.remove();
-        }
+        // Create a new container for the H1 and GIF
+        const newContainer = document.createElement('div');
+        newContainer.classList.add('new-container');
         
         // Add new H1 element
         const h1 = document.createElement('h1');
         h1.textContent = 'Το γνωρίζουμε';
-        body.appendChild(h1);
+        newContainer.appendChild(h1);
+        
+        // Add GIF
+        const gif = document.createElement('img');
+        gif.src = 'cat-ha-ha-ha.gif';
+        gif.alt = 'Cat laughing';
+        gif.style.width = '300px';
+        newContainer.appendChild(gif);
+        
+        // Append the new container to the body
+        document.body.appendChild(newContainer);
     }
 });
