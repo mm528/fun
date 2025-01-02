@@ -19,7 +19,7 @@ document.getElementById('yesBtn').addEventListener('click', function() {
     const gifContainer = document.getElementById('gifContainer');
     if (gifContainer) {
     gifContainer.innerHTML = `
-        <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWo4YWNveTk3aXAzMW9ndW1weWVnZGs5NHhveHNvMWRlbXA5dWx3NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uWlpPGquhGZNFzY90z/giphy.gif" alt="Cute Bear Love" style="width: 300px;">
+        <img src="bear-kiss-bear-kisses.gif" alt="Bear Kiss" style="width: 300px;">
     `;
     } else {
         console.error('gifContainer element not found');
