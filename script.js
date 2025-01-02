@@ -17,11 +17,14 @@ document.getElementById('noBtn').addEventListener('click', function() {
 
 document.getElementById('yesBtn').addEventListener('click', function() {
     const gifContainer = document.getElementById('gifContainer');
-    if (gifContainer) {
-    gifContainer.innerHTML = `
-        <img src="bear-kiss-bear-kisses.gif" alt="Bear Kiss" style="width: 300px;">
-    `;
+    const buttonsContainer = document.querySelector('.buttons');
+    
+    if (gifContainer && buttonsContainer) {
+        gifContainer.innerHTML = `
+            <img src="bear-kiss-bear-kisses.gif" alt="Bear Kiss" style="width: 300px;">
+        `;
+        buttonsContainer.style.display = 'none';
     } else {
-        console.error('gifContainer element not found');
+        console.error('Required elements not found');
     }
 });
