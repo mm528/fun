@@ -31,7 +31,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
         
         // Add GIF
         const gif = document.createElement('img');
-        gif.src = 'cat-ha-ha-ha.gif';
+        gif.src = './cat-ha-ha-ha.gif';
         gif.alt = 'Cat laughing';
         gif.style.width = '300px';
         newContainer.appendChild(gif);
