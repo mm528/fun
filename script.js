@@ -18,9 +18,9 @@ document.getElementById('noBtn').addEventListener('click', function() {
 document.getElementById('yesBtn').addEventListener('click', function() {
     const gifContainer = document.getElementById('gifContainer');
     if (gifContainer) {
-        gifContainer.innerHTML = `
-            <img src="./bear-kiss-bear-kisses.gif" alt="Heart" style="width: 200px;">
-        `;
+    gifContainer.innerHTML = `
+        <img src="bear-kiss-bear-kisses.gif" alt="Bear Kiss" style="width: 300px;">
+    `;
     } else {
         console.error('gifContainer element not found');
     }
