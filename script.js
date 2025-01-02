@@ -17,7 +17,11 @@ document.getElementById('noBtn').addEventListener('click', function() {
 
 document.getElementById('yesBtn').addEventListener('click', function() {
     const gifContainer = document.getElementById('gifContainer');
-    gifContainer.innerHTML = `
-        <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Heart" style="width: 200px;">
-    `;
+    if (gifContainer) {
+        gifContainer.innerHTML = `
+            <img src="./bear-kiss-bear-kisses.gif" alt="Heart" style="width: 200px;">
+        `;
+    } else {
+        console.error('gifContainer element not found');
+    }
 });
